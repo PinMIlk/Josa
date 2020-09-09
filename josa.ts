@@ -43,7 +43,7 @@ class Josa {
     public execute() {
         const hasLast = this.hasLast();
 
-        if (!this.isHangul()) throw new ReferenceError('Word is not Hangul.');
+        if (!this.isHangul()) throw new Error('Word is not Hangul.');
 
         switch (this.class) {
             case '은':
